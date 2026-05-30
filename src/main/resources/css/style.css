@@ -1,0 +1,30 @@
+.image
+ {
+    -fx-background-radius: 80;
+}
+.Alabel{
+ -fx-background-radius: 20;
+   -fx-background-color: white;
+     -fx-background-radius: 20;
+     -fx-padding: 10;
+
+     -fx-effect: dropshadow(three-pass-box,
+                            rgba(0,0,0,0.25),
+                            20,
+                            0,
+                            0,
+                            8);
+}
+
+.home{
+   -fx-background-color:  #4D694E;
+}
+.hover-button:hover {
+
+    -fx-translate-y: -10;
+
+}
+.button{
+
+    -fx-background-radius: 80;
+}

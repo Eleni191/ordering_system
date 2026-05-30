@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="controller.loginController"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="249.0" layoutY="-3.0" prefHeight="406.0" prefWidth="365.0" style="-fx-background-color: #fffff;">
+         <Label fx:id="messageLabel"
+                layoutX="110.0"
+                layoutY="350.0"
+                textFill="red" />
+         <children>
+            <Label layoutX="96.0" layoutY="41.0" text="Welcome" textFill="#863e3e">
+               <font>
+                  <Font name="Times New Roman Bold" size="49.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user" layoutX="98.0" layoutY="177.0" prefHeight="40.0" prefWidth="178.0" promptText="username" />
+            <PasswordField fx:id="pass" layoutX="97.0" layoutY="237.0" prefHeight="40.0" prefWidth="178.0" promptText=" password" />
+            <Button fx:id="login" layoutX="160.0" layoutY="301.0" mnemonicParsing="false"  text="login" textAlignment="RIGHT" textFill="#8d3232" onAction="#handleLogin">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="128.0" layoutY="111.0" text="Login Form" textFill="#6e0c0c">
+               <font>
+                  <Font name="Times New Roman Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView id="image1" fitHeight="400.0" fitWidth="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
